@@ -18,7 +18,7 @@ import RootCauseAnalysis from "./components/RootCauseAnalysis";
 import "./index.css";
 
 // API base URL - adjust this based on your backend deployment
-const API_BASE_URL = process.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
 
 function App() {
   const [messages, setMessages] = useState([]);

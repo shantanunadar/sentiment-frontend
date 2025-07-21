@@ -12,7 +12,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Loader2, Brain, AlertTriangle } from "lucide-react";
 
-const API_BASE_URL = process.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
 
 export default function RootCauseAnalysis({ messages }) {
   const [analysis, setAnalysis] = useState(null);
